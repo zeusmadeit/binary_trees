@@ -51,8 +51,10 @@ int binary_tree_balance(const binary_tree_t *tree);
 /** ADVANCE TASKS */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+int binary_tree_is_complete(const binary_tree_t *tree);
 
 /** HELPER FUNCTIONS */
 void btlo_helper(const binary_tree_t *tree, void (*func)(int), size_t level);
+int btic_helper(const binary_tree_t *tree, size_t index, size_t size);
 
 #endif /** BINARY_TREES_H */
