@@ -62,10 +62,12 @@ bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
 bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
+int binary_tree_is_avl(const binary_tree_t *tree);
 
 /** HELPER FUNCTIONS */
 void btlo_helper(const binary_tree_t *tree, void (*func)(int), size_t level);
 int btic_helper(const binary_tree_t *tree, size_t index, size_t size);
 int bt_ibst_helper(const binary_tree_t *tree, int min, int max);
+int btia_helper(const binary_tree_t *tree, int min, int max);
 
 #endif /** BINARY_TREES_H */
