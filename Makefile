@@ -45,6 +45,19 @@ task13: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/13-m
 
 task14: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/14-main.c 14-binary_tree_balance.c
 	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
+
+task15: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/15-main.c 15-binary_tree_is_full.c
+	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
+
+task16: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/16-main.c 16-binary_tree_is_perfect.c
+	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
+
+task17: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/17-main.c 17-binary_tree_sibling.c
+	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
+
+task18: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/18-main.c 18-binary_tree_uncle.c
+	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
+
 clean:
 	@echo "Cleaning up..."
 	find ./testfiles/ -type f -executable -delete
