@@ -36,6 +36,9 @@ task10: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/10-m
 
 task11: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/11-main.c 11-binary_tree_size.c
 	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
+
+task12: binary_trees.h binary_tree_print.c 0-binary_tree_node.c ./testfiles/12-main.c 12-binary_tree_leaves.c
+	$(CC) $(CFLAGS) $? $(LDFLAGS) -o ./testfiles/$@
 clean:
 	@echo "Cleaning up..."
 	find ./testfiles/ -type f -executable -delete
